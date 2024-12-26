@@ -94,6 +94,7 @@ class ExtraRulesHandler(ExtraRuleHandlerBase):
             r"\.imgur\.com$": [self.handle_imgur_dot_com],
             r"\.liveadvert\.com$": [(self.switch_to_down_if_status_code, 404)],
             r"\.myhuaweicloudz\.com$": [(self.switch_to_down_if_status_code, 403)],
+            r"^scnv\.io$": [(self.switch_to_down_if_status_code, 404)],
             r"\.skyrock\.com$": [(self.switch_to_down_if_status_code, 404)],
             r"\.sz.id$": [(self.switch_to_down_if_status_code, 302)],
             r"\.translate\.goog$": [(self.switch_to_down_if_status_code, 403)],
